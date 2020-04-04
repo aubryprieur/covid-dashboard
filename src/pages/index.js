@@ -14,11 +14,11 @@ import Map from 'components/Map';
 import gatsby_astronaut from 'assets/images/gatsby-astronaut.jpg';
 
 const LOCATION = {
-  lat: 41.390205,
-  lng: 2.154007
+  lat: 42.697285,
+  lng: 9.450881
 };
 const CENTER = [LOCATION.lat, LOCATION.lng];
-const DEFAULT_ZOOM = 4;
+const DEFAULT_ZOOM = 2;
 
 const IndexPage = () => {
 
@@ -132,12 +132,16 @@ const geoJsonLayers = new L.GeoJSON(geoJson, {
       <Map {...mapSettings} />
 
       <Container type="content" className="text-center home-start">
-        <h2>Still Getting Started?</h2>
-        <p>Run the following in your terminal!</p>
-        <pre>
-          <code>gatsby new [directory] https://github.com/colbyfayock/gatsby-starter-leaflet</code>
-        </pre>
-        <p className="note">Note: Gatsby CLI required globally for the above command</p>
+        <h2>Demo Mapping App with Gatsby and React Leaflet</h2>
+        <p>
+          Uses <a href="https://github.com/ExpDev07/coronavirus-tracker-api">github.com/ExpDev07/coronavirus-tracker-api</a> via <a href="https://coronavirus-tracker-api.herokuapp.com/">coronavirus-tracker-api.herokuapp.com</a>
+        </p>
+        <p>
+          Which uses jhu - <a href="https://github.com/CSSEGISandData/COVID-19">github.com/CSSEGISandData/COVID-19</a> - Worldwide Data repository operated by the Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE).
+        </p>
+        <p>
+          And csbs - <a href="https://www.csbs.org/information-covid-19-coronavirus">csbs.org/information-covid-19-coronavirus</a> - U.S. County data that comes from the Conference of State Bank Supervisors.
+        </p>
       </Container>
     </Layout>
   );

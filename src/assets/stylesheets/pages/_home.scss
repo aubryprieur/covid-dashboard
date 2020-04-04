@@ -2,7 +2,7 @@
 
   .map,
   .map-base {
-    height: 50vh;
+    height: 80vh;
   }
 
   main {
@@ -46,9 +46,9 @@
     overflow: hidden;
     width: 10em;
     height: 10em;
-    background-color: $gatsby-purple;
+    background-color: $light-blue-50;
     border-radius: 100%;
-    border: solid 6px $gatsby-purple;
+    border: solid 6px $light-blue-50;
     margin: 0;
 
     img {

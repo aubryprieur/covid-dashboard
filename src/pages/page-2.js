@@ -8,11 +8,12 @@ const SecondPage = () => {
   return (
     <Layout pageName="two">
       <Helmet>
-        <title>Page Two</title>
+        <title>References</title>
       </Helmet>
       <Container type="content" className="text-center">
-        <h1>Page Two</h1>
-        <p>Welcome to page 2</p>
+        <h1>Colby Fayock</h1>
+        <p><a href="https://www.freecodecamp.org/news/how-to-create-a-coronavirus-covid-19-dashboard-map-app-in-react-with-gatsby-and-leaflet/">
+               Freecodecamp</a></p>
       </Container>
     </Layout>
   );
