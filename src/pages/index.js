@@ -2,6 +2,8 @@ import React, { useRef } from 'react';
 import Helmet from 'react-helmet';
 import L from 'leaflet';
 import { Marker } from 'react-leaflet';
+import axios from 'axios';
+
 
 import { promiseToFlyTo, getCurrentLocation } from 'lib/map';
 
@@ -26,7 +28,19 @@ const IndexPage = () => {
    * @example Here this is and example of being used to zoom in and set a popup on load
    */
 
-  async function mapEffect({ leafletElement } = {}) {
+  async function mapEffect({ leafletElement: map } = {}) {
+      if ( !map ) return;
+
+      let response;
+
+      try {
+        response = await axios.get('https://corona.lmao.ninja/countries');
+      } catch(e) {
+        console.log('E', e);
+        return;
+      }
+
+      const { data } = response;
   }
 
   const mapSettings = {
