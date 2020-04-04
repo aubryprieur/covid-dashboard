@@ -14,11 +14,11 @@ import Map from 'components/Map';
 import gatsby_astronaut from 'assets/images/gatsby-astronaut.jpg';
 
 const LOCATION = {
-  lat: 38.9072,
-  lng: -77.0369
+  lat: 41.390205,
+  lng: 2.154007
 };
 const CENTER = [LOCATION.lat, LOCATION.lng];
-const DEFAULT_ZOOM = 2;
+const DEFAULT_ZOOM = 4;
 
 const IndexPage = () => {
 
